@@ -1,0 +1,291 @@
+body{
+	margin: 0px;
+}
+h1,h2,h3,h4,h5, h6{
+	font-weight: bold;
+}
+body{
+	background-image: url(../images/image-hero-mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: whitesmoke;
+	position: relative;
+	min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Commissioner", sans-serif;
+}
+@media only screen and (min-width: 610px){
+	body{
+		background-image: url(../images/image-hero-desktop.jpg);
+	}
+	
+}
+nav{
+	height: 10vh;
+	margin-left: 8vw;
+	margin-bottom: 15vh;
+}
+.container-fluid .collapse{
+		margin-left: 0;
+	}
+	.container-fluid .collapse ul li a{
+		color: white;
+		font-weight: bold;
+		margin-left: 0;
+		opacity: 1;
+	}
+@media only screen and (min-width: 610px){
+	.container-fluid .collapse{
+		margin-left: 45vw;
+	}
+	.container-fluid .collapse ul li a{
+		color: white;
+		font-weight: bold;
+		margin-left: 3vw;
+		opacity: 1;
+	}
+}
+
+#menu-btn{
+	background-image: url(../images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+main{
+	margin: auto 0.85rem;
+}
+.progress-bar{
+	background-color: #3cb4ac;
+}
+.container{
+	margin: 0.625rem auto;
+  	max-width: 34.375rem;
+	padding : 1.5rem 1.5rem 1.875rem 1.5rem;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.container p{
+	color: grey;
+	font-size: 0.875rem;
+}
+.container button{
+	background-color: #3cb4ac;
+	border-radius: 30px;
+	border : none;
+	color : white;
+	float: left;
+}
+.container h3 span{
+	font-size: 0.875rem;
+	color: grey;
+	font-weight: normal;
+}
+
+.intro-buttons{
+	height: 5vh;
+}
+.intro-buttons a{
+	text-decoration: none;
+	color: white;
+	float: right;
+}
+.intro-buttons a span{
+	display: none;
+}
+.bookmark-button{
+	border-radius: 30px;
+	border: none;
+	background-color: grey;
+	display: -webkit-box;
+}
+
+@media only screen and (min-width: 610px){
+	.intro-container{
+		margin: 0.625rem auto;
+	}
+}
+.intro-container > img{
+	position: relative;
+	top: -60px;
+}
+.about_part_container{
+	border: solid 1px grey;
+	border-radius: 10px;
+	padding: 1.825rem;
+	margin: 1.25rem auto;
+}
+.about_part_container h4{
+	float: right;
+}
+.about_title{
+    box-sizing: border-box;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (min-width: 610px){
+	.intro-buttons{
+		height: 5vh;
+	}
+	.intro-buttons a{
+		text-decoration: none;
+		color: white;
+		float: right;
+	}
+	.intro-buttons a span{
+		display: block;
+		padding: 15px 20px 0 15px;
+	}
+	.bookmark-button{
+		border-radius: 30px;
+		border: none;
+		background-color: grey;
+		display: -webkit-box;
+	}
+}
+.about_title h6:nth-child(1){
+	box-sizing: border-box;
+	text-align: left;
+}
+.about_title h6:nth-child(2){
+	color: #3cb4ac;
+	box-sizing: border-box;
+	text-align: left;
+}
+@media only screen and (min-width: 610px){
+	.about_title{
+		display: flex;
+		}
+	.about_title h6:nth-child(1){
+		text-align: center;
+	}
+	.about_title h6:nth-child(2){
+		color: #3cb4ac;
+		text-align: center;
+	}
+}
+.about_bottom{
+	height: 10vh;
+    display: block;
+}
+.about_bottom h3{
+	box-sizing: border-box;
+	text-align: left;
+}
+.about_bottom button{
+	padding: 10px;
+}
+@media only screen and (min-width: 610px){
+	.about_bottom{
+		justify-content: space-between;
+		height: 5vh;
+		display: flex;
+	}
+	.about_bottom h3{
+		float: left;
+	}
+	.about_bottom button{
+		float: right;
+		padding: 10px;
+	}
+}
+.disable-part{
+	opacity: 0.5;
+}
+.disable-part button{
+	background-color: grey;
+	padding: 10px;
+}
+/* this is modal style==================================================*/
+.modal-header-custom{
+	display: block;
+	text-align: left;
+}
+.modal-body-part{
+	border: solid 2px grey;
+	border-radius: 10px;
+	padding: 30px 0;
+	margin: 10px;
+}
+.modal-body-part .pledge-top{
+	text-align: left;
+	padding: 0 30px;
+}
+.modal-body-part .pledge-top .radio{
+	color: green;
+	background-color: green;
+	width: 20px;
+	height: 20px;
+}
+.modal-body-part .pledge-top label{
+	font-weight: bold;
+	text-align: center;
+}
+.modal-body-part .pledge-top p{
+	padding: 10px 0;
+}
+.divider{
+	border-bottom: solid 1px grey;
+	margin-bottom: 20px;
+}
+.pledge-bottom{
+	text-align: center;
+}
+.pledge-counter{
+	border : solid 2px grey;
+	border-radius: 20px;
+	display: inline-block;
+	padding: 10px;
+}
+.pledge-counter input{
+	width: 4ch;
+	border: none;
+	outline: none;
+}
+.green_border{
+	border-color : #3cb4ac;
+}
+.pledge-bottom button{
+	padding: 15px;
+	margin-left: 20px;
+}
+#myModal2 .modal-dialog{
+	margin-top: 14rem;
+}
+#myModal2 .modal-content{
+	text-align: center;
+	padding: 30px;
+}
+#myModal2 img{
+	max-width: 100%;
+	margin: auto;
+	padding: 20px 0;
+}
+#myModal2 button{
+	width: 30%;
+	padding: 10px;
+	background-color: #3cb4ac;
+	border-radius: 30px;
+	border : none;
+	color : white;
+}
+
+/* this is login page style=========================================*/
+.form-label{
+	float: left;
+}
+.form-button {
+	background-color: #3cb4ac;
+    border-radius: 30px;
+    border: none;
+    color: white;
+	margin-top: 30px;
+	padding: 10px 20px;
+}

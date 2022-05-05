@@ -1,0 +1,28 @@
+<h3>{{mywelcome}}</h3>
+<h1>{{theTime}}</h1>
+<div class="table-responsive col-xs-12">
+<table>
+  <thead>
+    <th>No</th>
+    <th>ID</th>
+    <th>UserName</th>
+    <th>PassWord</th>
+    <th colspan="2">Action</th>
+  </thead>
+    <tr ng-repeat="x in users | orderBy : 'name'">
+      <td>{{$index+1}}</td>
+      <td>{{ x._id }}</td>
+      <td><input name="username{{$index}}" ng-model="x.username"  ng-disabled="!enabledEdit[{{$index}}]"/></td>
+      <td><input name="password{{$index}}" ng-model="x.password"  ng-disabled="!enabledEdit[{{$index}}]"/></td>
+      <td>
+        <button class="btn btn-primary" ng-click="editUser($index)" ng-show = "!enabledEdit[{{$index}}]"><i class="far fa-edit"></i></button>
+        <button class="btn btn-success" ng-click="updateUser($index, x._id)" ng-show = "enabledEdit[{{$index}}]"><i class="fas fa-check"></i></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="deleteUser($index, x._id)" ng-show = "!enabledEdit[{{$index}}]"><i class="fas fa-trash-alt"></i></button>
+          <button class="btn btn-danger" ng-click="cancelUser($index)" ng-show = "enabledEdit[{{$index}}]"><i class="fas fa-window-close"></i></button>  
+      </td>
+      
+    </tr>
+  </table>
+</div>
